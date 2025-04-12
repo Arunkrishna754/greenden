@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <!-- Mobile toggle button -->
+        <div class="md:hidden cursor-pointer" onclick="toggleMenu()">
+            <!-- Hamburger Icon -->
+            <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <!-- Close Icon -->
+            <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-5 text-gray-600">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="products.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 w-64 h-full bg-green-100 text-gray-800 px-6 py-8 space-y-6 transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <a class="block text-lg hover:text-black" href="index.html">Home</a>
+        <a class="block text-lg hover:text-black" href="products.html">Products</a>
+        <a class="block text-lg hover:text-black" href="contact.html">Contact</a>
+    </div>
+
+
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center">
+            Our Products
+        </h1>
+
+        <input type="text" class="border border-black p-2 m-3" style="width: 80%;" placeholder="Search for products...">
+        <br>
+
+
+    </section>
+
+
+    <section class="p-4 text-center">
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./best-seller-1.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Rose Plant</h1>
+                <p>₹20.00</p>
+            </div>
+            <div>
+                <img src="./best-seller-2.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Lilly Plant</h1>
+                <p>₹40.00</p>
+            </div>
+            <div>
+                <img src="./best-seller-3.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Snake Plant</h1>
+                <p>₹70.00</p>
+            </div>
+            <div>
+                <img src="./best-seller-4.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Lotus Plant</h1>
+                <p>₹90.00</p>
+            </div>
+            <div>
+                <img src="./Chrysanthemums.png"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Chrysanthemums Plant</h1>
+                <p>₹49.00</p>
+            </div>
+            <div>
+                <img src="./Lavender.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Lavender Plant</h1>
+                <p>₹100.00</p>
+            </div>
+            <div>
+                <img src="./Marigolds.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Marigolds Plant</h1>
+                <p>₹120.00</p>
+            </div>
+            <div>
+                <img src="./Orchids.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Orchids Plant</h1>
+                <p>₹180.00</p>
+            </div>
+            <div>
+                <img src="./Peonies.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Peonies Plant</h1>
+                <p>₹60.00</p>
+            </div>
+            <div>
+                <img src="./Sunflowers.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Sunflowers Plant</h1>
+                <p>₹80.00</p>
+            </div>
+            <div>
+                <img src="./tulips.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>tulips Plant</h1>
+                <p>₹170.00</p>
+            </div>
+            <div>
+                <img src="./Marigolds.png" class="inline hover:shadow-xl transform hover:-translate-y-2 duration-500">
+                <h1>Marigolds Plant</h1>
+                <p>₹120.00</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- footer section -->
+
+    <section class="bg-green-100 p-10 mt-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">
+            Greenden
+        </h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+        <p>&copy; 2025 Greenden. All rights reserved.</p>
+    </section>
+
+    
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

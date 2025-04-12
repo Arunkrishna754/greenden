@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <!-- Mobile toggle button -->
+        <div class="md:hidden cursor-pointer" onclick="toggleMenu()">
+            <!-- Hamburger Icon -->
+            <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <!-- Close Icon -->
+            <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-5 text-gray-600">
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="products.html">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 w-64 h-full bg-green-100 text-gray-800 px-6 py-8 space-y-6 transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <a class="block text-lg hover:text-black" href="index.html">Home</a>
+        <a class="block text-lg hover:text-black" href="products.html">Products</a>
+        <a class="block text-lg hover:text-black" href="contact.html">Contact</a>
+    </div>
+
+
+    <div class="flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md mt-10 mb-10">
+          <h2 class="text-2xl font-bold mb-6 text-center text-green-800">Contact Us</h2>
+    
+          <form class="space-y-4">
+            <div>
+              <label class="block text-gray-700 mb-1" for="first-name">First Name</label>
+              <input type="text" id="first-name" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter first name">
+            </div>
+    
+            <div>
+              <label class="block text-gray-700 mb-1" for="last-name">Last Name</label>
+              <input type="text" id="last-name" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter last name">
+            </div>
+
+            <div>
+                <label class="block text-gray-700 mb-1" for="last-name">Email</label>
+                <input type="text" id="last-name" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Enter Email">
+              </div>
+    
+            <div>
+              <label class="block text-gray-700 mb-1" for="message">Message</label>
+              <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Your message..."></textarea>
+            </div>
+    
+            <button type="submit" class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition duration-300">
+              Send Message
+            </button>
+          </form>
+        </div>
+    </div>
+    
+    
+
+
+
+
+    <!-- footer section -->
+
+    <section class="bg-green-100 p-10 mt-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">
+            Greenden
+        </h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+
+        <p>&copy; 2025 Greenden. All rights reserved.</p>
+    </section>
+
+    
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
